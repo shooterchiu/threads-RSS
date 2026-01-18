@@ -28,7 +28,7 @@ jobs:
     - name: Run script for prompt_case profile
       # 這裡設定你要抓取的 Threads 帳號 URL 和輸出的檔案路徑
       run: |
-        python script.py https://www.threads.com/@prompt_case threads_feed.xml
+        python scraper.py https://www.threads.com/@prompt_case threads_feed.xml
 
     - name: Upload RSS feed to GitHub Pages artifact
       uses: actions/upload-pages-artifact@v3
