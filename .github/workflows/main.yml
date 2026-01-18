@@ -29,6 +29,7 @@ jobs:
       # 這裡設定你要抓取的 Threads 帳號 URL 和輸出的檔案路徑
       run: |
         mkdir -p public
+        echo "RSS Feed is live at /threads_feed.xml" > public/index.html
         python scraper.py https://www.threads.com/@prompt_case public/threads_feed.xml
 
     - name: Upload RSS feed to GitHub Pages artifact
